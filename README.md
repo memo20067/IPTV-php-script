@@ -1,4 +1,4 @@
-# IPTV BOX – A Cross-Platform IPTV Management Script
+# IPTV – A Cross-Platform IPTV Management Script
 
 ## 📦 Overview
 
