@@ -44,6 +44,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $conn->query("CREATE TABLE IF NOT EXISTS admin_messages (
         id INT AUTO_INCREMENT PRIMARY KEY,
         message TEXT,
+        type VARCHAR(32) DEFAULT 'info',
+        bg_color VARCHAR(32) DEFAULT NULL,
+        target_user_id INT DEFAULT NULL,
         active TINYINT DEFAULT 1,
         created_at DATETIME DEFAULT CURRENT_TIMESTAMP
     )");
